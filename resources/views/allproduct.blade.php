@@ -20,7 +20,7 @@
                             <th>Name</th>
                             <th>Description</th>
                             <th>status</th>
-                            <th>image</th>
+                            
                             <th>Action </th>
 
                         </tr>
@@ -31,7 +31,7 @@
                         <td>{{$row->product_name}}</td>
                         <td>{{$row->description}}</td>
                         <td>{{$row->status}}</td>
-                        <td width="70 px"> <img width="70px" height="70px" src="{{asset('/'.$row->image) }}" /> </td>
+                       
                         <td> <a href="edit-product/{{$row->id}}" class=" btn btn-primary">update </a>
                         <td><form action="{{route('products.destroy', ['id' => $row->id])}}" >
                                 <button type="submit" class="btn btn-danger "

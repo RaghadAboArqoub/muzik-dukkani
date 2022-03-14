@@ -10,7 +10,7 @@
             <th scope="col">#</th>
             <th scope="col">Product Name</th>
             <th scope="col">Product Description</th>
-            <th scope="col">Image</th>
+            
             <th scope="col">Status</th>
         </tr>
     </thead>
@@ -20,7 +20,6 @@
         <td>{{$row->product_name}}</td>
         <td>{{$row->description}}</td>
         
-        <td width="70 px"> <img width="70px" height="70px" src="{{asset('/'.$row->image) }}" /> </td>
         <td>{{$row->status}}</td>
     </tr>
     @endforeach
